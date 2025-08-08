@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\juanp\Downloads\Repaso js\css\styles.css">
+</head>
+<body>
+    <header class="encabezado">
+    <nav>
+    <ul class="lista">
+        <li class="elemento"><a href="C:\Users\juanp\Downloads\Repaso js\index.html">Inicio</a></li>
+        <li class="elemento"><a href="C:\Users\juanp\Downloads\Repaso js\funciones\funciones.html">Funciones</a></li>
+        <li class="elemento"><a href="C:\Users\juanp\Downloads\Repaso js\funcion_flecha\Funcion_Flecha.html">Funcion flecha</a></li>
+        <li class="elemento"><a href="C:\Users\juanp\Downloads\Repaso js\calback\callback.html">callback</a></li>
+        <li class="elemento"><a href="C:\Users\juanp\Downloads\Repaso js\promesas\promesas (1).html">Promesas</a></li>
+    </ul>
+    </nav>
+</header>
+
+<section>
+        <h2>🔹 Función Flecha</h2>
+        <p>Las funciones flecha son una forma corta y moderna de escribir funciones en JavaScript. Se escriben con el símbolo <code>=&gt;</code> y son muy usadas porque hacen el código más limpio y fácil de leer. Además, manejan de forma diferente el valor de <code>this</code>, lo que ayuda en muchos casos.</p>
+        <pre><code>// Ejemplo
+const sumar = (a, b) =&gt; a + b;
+console.log(sumar(5, 3)); // 8</code></pre>
+
+        <h2>🔹 Funciones</h2>
+        <p>Una función es como una receta: tiene instrucciones que se pueden usar cada vez que se necesiten. Puedes darle datos (parámetros) y te puede devolver un resultado. Sirven para no repetir código y hacerlo más ordenado.</p>
+        <pre><code>// Ejemplo
+function saludar(nombre) {
+    return `Hola, ${nombre}`;
+}
+console.log(saludar("Juan")); // Hola, Juan</code></pre>
+
+        <h2>🔹 Callback</h2>
+        <p>Un callback es simplemente una función que le pasas a otra función para que la ejecute más tarde. Es muy útil cuando quieres que algo ocurra justo después de que termine otra tarea.</p>
+        <pre><code>// Ejemplo
+function procesarDato(dato, callback) {
+    console.log(`Procesando: ${dato}`);
+    callback();
+}
+procesarDato("Información", () =&gt; console.log("Proceso finalizado"));
+// Procesando: Información
+// Proceso finalizado</code></pre>
+
+        <h2>🔹 Promesas</h2>
+        <p>Las promesas son una forma de manejar tareas que toman tiempo, como pedir datos a un servidor. Primero están "pendientes", luego se resuelven con éxito o se rechazan si hay un error.</p>
+        <pre><code>// Ejemplo
+const promesa = new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; resolve("Éxito"), 2000);
+});
+promesa.then(resultado =&gt; console.log(resultado)); // Éxito (después de 2 seg)</code></pre>
+    </section>
+</body>
+<!-- Agregar este link en el <head> para usar Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<footer class="pie-pagina">
+    <p>© 2025 Juan Diego Garcia | Sígueme en:</p>
+    <div class="redes">
+      <!-- Agregar este link en el <head> para usar Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<footer class="pie-pagina">
+
+    <div class="redes">
+        <a href="https://wa.me/573001112233" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://facebook.com" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/juandiego_335?igsh=MWd4ZzdxdTMzYjN6cA%3D%3D&utm_source=qr" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</footer>
+
+    </div>
+</footer>
+
+</html>
